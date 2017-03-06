@@ -1,0 +1,204 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+body{
+	padding-top: 30px;
+	background-color: #ebebeb !important; 
+	height: 5000px;
+	line-height: 1.428571429 !important;
+    font-family: "Segoe UI Title","Helvetica Neue",sans-serif !important;
+}
+/*My classes*/
+.col-height{
+	height:630px;
+	overflow: hidden;
+}
+
+.roww{
+	position: relative;
+}
+
+.text-in-figcaption h2{
+	font-size: 1em;
+
+}
+
+.text-in-figcaption p{
+	font-size: 0.6em;
+}
+
+.col-padding{
+	padding-left: 0px !important;
+	padding-right: 10px !important;
+	padding-left: 0px !important;
+}
+
+.col-padding-third{
+	padding-right: 0px !important;
+}
+
+.marg{
+	margin-top: 20px;
+}
+
+
+/*my classes end*/
+
+
+/*-----------1---------*/
+
+
+.main-post{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.main-post figure{
+width: 100%;
+height:100%;
+background-image: url(https://i0.wp.com/almalavinia.com/wp-content/uploads/2017/02/20160710_174724.png?resize=1024%2C576);
+background-size: cover;
+background-position: center;
+}
+
+.main-post a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+/*main post description*/
+.description{
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	color: aliceblue;
+    font-size: 25px;
+    left: 0px;
+
+    background: rgba(15,15,15,0.78);
+}
+
+
+.description-main{
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	color: aliceblue;
+    font-size: 25px;
+    left: 0px;
+}
+
+
+
+
+
+/*main post description END*/
+/*-----------1 end---------*/
+
+
+/*-----------2---------*/
+.second-post{
+	width: 100%;
+	height: 53%;
+}
+
+.second-post figure{
+width: 100%;
+height:100%;
+background-image: url(https://i2.wp.com/almalavinia.com/wp-content/uploads/2017/02/20160530_210931.png?resize=1024%2C576);
+background-size: cover;
+background-position: center;
+    background-clip: content-box;
+    padding-bottom: 5px;
+}
+
+
+
+/*-----------2 end---------*/
+
+
+/*-----------3---------*/
+.third-post{
+	width: 100%;
+	height: 47%
+}
+
+.third-post figure{
+width: 100%;
+height:100%;
+background-image: url(https://i1.wp.com/almalavinia.com/wp-content/uploads/2017/02/20160710_142953.png?resize=1024%2C576);
+background-size: cover;
+background-position: center;
+background-clip: content-box;
+padding-top: 5px;
+}
+
+
+/*-----------3 end---------*/
+
+
+/*-----------4---------*/
+.fourth-post{
+	width: 100%;
+	height: 40%
+}
+
+.fourth-post figure{
+width: 100%;
+height:100%;
+background-image: url(https://scontent.fbkk2-1.fna.fbcdn.net/v/t31.0-8/16178892_10154945255934819_8732987899735337682_o.jpg?oh=81b5ddcdbcaa5660dc0bb7bee084cfd9&oe=5969B089);
+background-size: cover;
+background-position: center;
+background-clip: content-box;
+padding-bottom: 5px;
+}
+/*-----------4 end---------*/
+
+/*-----------5---------*/
+.fifth-post{
+	width: 100%;
+	height: 60%
+}
+
+.fifth-post figure{
+width: 100%;
+height:100%;
+background-image: url(https://i1.wp.com/almalavinia.com/wp-content/uploads/2017/03/IMG_20170304_193731_908_blog.jpg?w=745);
+background-size: cover;
+background-position: center;
+background-clip: content-box;
+padding-top: 5px;
+}
+
+
+
+/*-----------5 end---------*/
+
+@media screen and (max-width: 768px) {
+
+.col-height{
+	height: 400px;
+	overflow: initial;
+}
+.col-padding{
+	padding: 0px !important;
+}
+.row {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+.container-fluid{
+	padding: 0px !important;
+}
+}
+
+}
