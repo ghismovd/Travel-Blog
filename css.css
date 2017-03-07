@@ -17,6 +17,7 @@ body{
 .col-height{
 	height:630px;
 	overflow: hidden;
+	transition: height 200ms ease-out;
 }
 
 .roww{
@@ -52,11 +53,17 @@ body{
 
 /*-----------1---------*/
 
+figure{
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+overflow: hidden;
+}
 
 .main-post{
 	height: 100%;
 	width: 100%;
 	position: relative;
+	overflow: hidden;
 }
 
 .main-post figure{
@@ -65,12 +72,33 @@ height:100%;
 background-image: url(https://i0.wp.com/almalavinia.com/wp-content/uploads/2017/02/20160710_174724.png?resize=1024%2C576);
 background-size: cover;
 background-position: center;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+overflow: hidden;
+}
+
+a{
+	overflow: hidden;
+}
+
+ a:hover figure {
+background-position: 62%;
+overflow: hidden;
+}
+
+i.fa.fa-arrow-circle-o-right{
+	transition:  all 200ms ease-out;
+}
+
+a:hover i{
+	margin-left: 20px;
 }
 
 .main-post a{
 	display: inline-block;
 	width: 100%;
 	height: 100%;
+	transition: height 200ms ease-out;
 }
 
 /*main post description*/
@@ -82,11 +110,18 @@ background-position: center;
 	color: aliceblue;
     font-size: 25px;
     left: 0px;
-
+    padding: 20px;
     background: rgba(15,15,15,0.78);
+}
+.description-padding{
+
+	bottom: 5px !important;
 }
 
 
+.description h2{
+	margin-top: 0;
+}
 .description-main{
 	width: 100%;
 	display: inline-block;
@@ -157,7 +192,7 @@ width: 100%;
 height:100%;
 background-image: url(https://scontent.fbkk2-1.fna.fbcdn.net/v/t31.0-8/16178892_10154945255934819_8732987899735337682_o.jpg?oh=81b5ddcdbcaa5660dc0bb7bee084cfd9&oe=5969B089);
 background-size: cover;
-background-position: center;
+background-position: 194% 107%;
 background-clip: content-box;
 padding-bottom: 5px;
 }
@@ -172,7 +207,7 @@ padding-bottom: 5px;
 .fifth-post figure{
 width: 100%;
 height:100%;
-background-image: url(https://i1.wp.com/almalavinia.com/wp-content/uploads/2017/03/IMG_20170304_193731_908_blog.jpg?w=745);
+background-image: url(https://i2.wp.com/almalavinia.com/wp-content/uploads/2017/03/DSC_0888.jpg?w=745);
 background-size: cover;
 background-position: center;
 background-clip: content-box;
@@ -183,12 +218,51 @@ padding-top: 5px;
 
 /*-----------5 end---------*/
 
+
+@media screen and (max-width: 940px) {
+
+.col-height{
+	height: 500px;
+	transition: height 400ms ease-out;
+}
+
+.second-post .description{
+ background-color:rgba(13,77,124,0.68);	
+ top: -264px;	
+}
+
+.description {
+    padding: 46px 20px 20px 20px;
+}
+
+.fourth-post .description{
+	    background: rgba(79,109,89,0.77);
+}
+
+.third-post .description{
+    background: rgba(31,42,87,0.7);
+    top: -228px;
+}
+
+.fifth-post .description{
+	background-color: rgba(98,47,105,0.8);
+	top: 204px;
+}
+
+
+
+
+}
+
+
 @media screen and (max-width: 768px) {
 
 .col-height{
-	height: 400px;
+	height: 255px  ;
 	overflow: initial;
+	transition: height 200ms ease-out;
 }
+
 .col-padding{
 	padding: 0px !important;
 }
@@ -199,6 +273,49 @@ padding-top: 5px;
 .container-fluid{
 	padding: 0px !important;
 }
+.second-post, .third-post, .fourth-post, .fifth-post{
+	margin-top: 5px;
+	width: 100%;
+	height: 125px;
+}
+.second-post figure{
+	background-position: 50% 90%;
+}
+.fourth-post figure{
+	background-position: 50% 60%;
+}
+
+.second-post .description{
+ background-color:rgba(13,77,124,0.68);	
+ top: -125px;	
+}
+
+.description-padding{
+ 	bottom: 0px !important;
+}
+
+.description {
+    padding: 20px 20px 20px 20px;
+}
+
+
+.third-post .description{
+    background: rgba(31,42,87,0.7);
+    top: -125px;
+}
+
+.fourth-post .description{
+	    background: rgba(79,109,89,0.77);
+	    top:-125px;
+}
+
+.fifth-post .description{
+	background-color: rgba(98,47,105,0.8);
+	top: 130px;
+}
+
+.second-post figure, .third-post figure, .fourth-post figure, .fifth-post figure{
+	padding: 0px;
 }
 
 }
