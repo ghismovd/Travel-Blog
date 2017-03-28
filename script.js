@@ -1,3 +1,21 @@
+$(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 80) {
+      $('nav').addClass('navbar-fixed-top');
+    }
+    if ($(window).scrollTop() < 81) {
+      $('nav').removeClass('navbar-fixed-top');
+    }
+  });
+});
+
+
+
 var step = 25;
 var scrolling = false;
 
