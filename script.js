@@ -6,10 +6,10 @@ $(document).ready(function() {
       //nav bar to stick.  
       console.log($(window).scrollTop())
     if ($(window).scrollTop() > 80) {
-      $('nav').addClass('navbar-fixed-top');
+      $('.navbar').addClass('navbar-fixed-top');
     }
     if ($(window).scrollTop() < 81) {
-      $('nav').removeClass('navbar-fixed-top');
+      $('.navbar').removeClass('navbar-fixed-top');
     }
   });
 });
@@ -58,4 +58,10 @@ function scrollContent(direction) {
     });
 }
 
+ Carousel Auto-Cycle
+$(document).ready(function() {
 
+    $('.carousel').carousel({
+     interval: 6000
+    })
+ });
