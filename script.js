@@ -1,3 +1,7 @@
+
+
+jQuery(document).ready(function($) {
+
 $(document).ready(function() {
   
   $(window).scroll(function () {
@@ -57,11 +61,122 @@ function scrollContent(direction) {
         }
     });
 }
-
- Carousel Auto-Cycle
+ 
 $(document).ready(function() {
 
     $('.carousel').carousel({
-     interval: 6000
+     interval: 30000
     })
  });
+
+
+//daca are id="category-asia"
+//display a.categori 
+//add class a.categori asia
+//else id= "category-europ"
+// display a.categori
+// add class to a.categori . europa
+//else id= "category-africa"
+// display a.categori
+// add class to a.categori . africa
+
+if ($('p.asia').attr("id") == "europa") {
+         $('a.categori').addClass('europe');
+  }
+ if ($('p.asia').attr("id") == "europa") {
+         $('a.categori').addClass('europe');
+  }
+  if ($('p.asia').attr("id") == "europa") {
+         $('a.categori').addClass('europe');
+  }
+
+
+'use strict';
+
+$(function() {
+
+    //settings for slider
+    var width = 720;
+    var animationSpeed = 1000;
+    var pause = 3000;
+    var currentSlide = 1;
+
+    //cache DOM elements
+    var $slider = $('#slider');
+    var $slideContainer = $('.slides', $slider);
+    var $slides = $('.slide', $slider);
+
+    var interval;
+
+    function startSlider() {
+        interval = setInterval(function() {
+            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+                if (++currentSlide === $slides.length) {
+                    currentSlide = 1;
+                    $slideContainer.css('margin-left', 0);
+                }
+            });
+        }, pause);
+    }
+    function pauseSlider() {
+        clearInterval(interval);
+    }
+
+    $slideContainer
+        .on('mouseenter', pauseSlider)
+        .on('mouseleave', startSlider);
+
+    startSlider();
+
+
+});
+
+'use strict';
+
+$(function() {
+
+    //settings for slider
+    var width = 720;
+    var animationSpeed = 1000;
+    var pause = 3000;
+    var currentSlide = 1;
+
+    //cache DOM elements
+    var $slider = $('#slider');
+    var $slideContainer = $('.slides', $slider);
+    var $slides = $('.slide', $slider);
+
+    var interval;
+
+    function startSlider() {
+        interval = setInterval(function() {
+            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+                if (++currentSlide === $slides.length) {
+                    currentSlide = 1;
+                    $slideContainer.css('margin-left', 0);
+                }
+            });
+        }, pause);
+    }
+    function pauseSlider() {
+        clearInterval(interval);
+    }
+
+    $slideContainer
+        .on('mouseenter', pauseSlider)
+        .on('mouseleave', startSlider);
+
+    startSlider();
+
+
+});
+
+
+});
+
+//first 3 sa aiba active
+//first remove active
+//pune la urmatoarea 
+//daca ajunge la +lenght du te iar la primu
+
+//daca primele 3 active dai al patru lea active si remove la primu fa asta pana ajunge la lenght
