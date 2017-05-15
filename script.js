@@ -1,4 +1,10 @@
 
+var overlay = document.getElementById("overlay");
+
+window.addEventListener('load', function(){
+  overlay.style.display = 'none';
+})
+
 
 jQuery(document).ready(function($) {
 
@@ -17,6 +23,12 @@ $(document).ready(function() {
     }
   });
 });
+
+
+$(window).load(function(){
+    $('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
+
 
 
 

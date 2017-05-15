@@ -14,4 +14,28 @@
      $(".prev").click(function() {
        owl.trigger('owl.prev');
      })
+  
+
+     
+   
+$(window).scroll(function(){
+
+ var pContainerHeight = $('.big').height();
+
+  var wScroll = $(this).scrollTop();
+
+  if (wScroll <= pContainerHeight) {
+
+    $('.logo').css({
+      'transform' : 'translate(0px, '+ wScroll /4 +'%)'
+    });
+
+  }
+});
+
+
+
+
+
    });
+
